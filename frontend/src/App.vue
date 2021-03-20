@@ -6,22 +6,27 @@
 
 <script>
 export default {
-  name: "App"
+  name: "App",
 };
 </script>
 
 <style lang="scss">
-#app {
+body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  font-family: "Raleway", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  background-color: #f9f9f9;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
 }
 </style>

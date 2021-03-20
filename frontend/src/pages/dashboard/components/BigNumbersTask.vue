@@ -14,12 +14,13 @@
 
 <script>
 export default {
-  props: ["tarefasConcluidas", "tarefasEmAberto"]
+  name: "BigNumbersTaks",
+  props: ["tarefasConcluidas", "tarefasEmAberto"],
 };
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/baseColors.scss";
+@import "../../../styles/baseColors.scss";
 
 #big-number {
   display: flex;

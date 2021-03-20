@@ -20,7 +20,7 @@ class TarefaService:
         return nova_tarefa
 
     def get_tarefas(self) -> List[TarefaSchema]:
-        tarefas = self.db.query(Tarefa).filter(Tarefa.deleted_at == None).all()
+        tarefas = self.db.query(Tarefa).filter(Tarefa.deleted_at == None).order_by(Tarefa.created_at.desc()).all()
         return tarefas
 
     def update_tarefa(self, id_tarefa: int, infos_tarefa: UpdateTarfea) -> TarefaSchema:
